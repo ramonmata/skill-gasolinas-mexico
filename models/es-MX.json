@@ -1,0 +1,125 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "gasolinas de méxico",
+          "intents": [
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": [
+                      "no adios",
+                      "no bye",
+                      "no",
+                      "ya no",
+                      "asi esta bien",
+                      "no gracias",
+                      "gracias",
+                      "nop",
+                      "bye",
+                      "adios"
+                  ]
+              },
+              {
+                  "name": "PricesIntent",
+                  "slots": [
+                      {
+                          "name": "gasolina",
+                          "type": "gasolinaType"
+                      }
+                  ],
+                  "samples": [
+                      "precio {gasolina}",
+                      "precios {gasolina}",
+                      "a cuanto la {gasolina}",
+                      "a cuanto el {gasolina}",
+                      "a cuanto esta la {gasolina}",
+                      "a cuanto esta el {gasolina}",
+                      "el precios de {gasolina}",
+                      "el precios del {gasolina}",
+                      "el precios de el {gasolina}",
+                      "el precios de la {gasolina}",
+                      "los precios {gasolina}",
+                      "los precios de {gasolina}",
+                      "los precios del {gasolina}",
+                      "los precios de el {gasolina}",
+                      "los precios de la {gasolina}",
+                      "cual es el precio de {gasolina}",
+                      "cual es el precio del {gasolina}",
+                      "cual es el precio de el {gasolina}",
+                      "cual es el precio de la {gasolina}",
+                      "cuanto cuesta {gasolina}",
+                      "cuanto cuesta la {gasolina}",
+                      "cuanto cuesta el {gasolina}",
+                      "y la {gasolina}",
+                      "y el {gasolina}",
+                      "y del {gasolina}",
+                      "y de el {gasolina}",
+                      "si para el {gasolina}",
+                      "si para la {gasolina}",
+                      "si y para el {gasolina}",
+                      "si y para la {gasolina}",
+                      "si del {gasolina}",
+                      "si de el {gasolina}",
+                      "si de la {gasolina}"
+                  ]
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              }
+          ],
+          "types": [
+              {
+                  "name": "gasolinaType",
+                  "values": [
+                      {
+                          "name": {
+                              "value": "gasolina",
+                              "synonyms": [
+                                  "gas",
+                                  "gasolinas",
+                                  "gota",
+                                  "todas"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "diesel",
+                              "synonyms": [
+                                  "disel",
+                                  "diésel",
+                                  "negra"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "premium",
+                              "synonyms": [
+                                  "roja"
+                              ]
+                          }
+                      },
+                      {
+                          "name": {
+                              "value": "magna",
+                              "synonyms": [
+                                  "regular",
+                                  "verde"
+                              ]
+                          }
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}

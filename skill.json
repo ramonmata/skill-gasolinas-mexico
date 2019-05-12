@@ -1,0 +1,52 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "ask-skill-gasolinas-de-mexico",
+          "sourceDir": "lambda/custom"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa:devices:all:address:country_and_postal_code:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "locales": {
+        "es-MX": {
+          "privacyPolicyUrl": "http://ramon.mata.com.mx/gasolinas-de-mexico-politica-privacidad/",
+          "termsOfUseUrl": "http://ramon.mata.com.mx/gasolinas-de-mexico-terminos-de-uso/"
+        }
+      },
+      "allowsPurchases": false,
+      "usesPersonalInfo": true,
+      "isChildDirected": false,
+      "isExportCompliant": true,
+      "containsAds": false
+    },
+    "publishingInformation": {
+      "locales": {
+        "es-MX": {
+          "name": "Gasolinas de México",
+          "summary": "Para conocer el precio de las Gasolinas de México",
+          "description": "Con el skill Gasolinas de México podrás obtener los precios de la gasolina y diésel publicados por Datos Abiertos de México desde tu dispositivo Alexa.\n\nSe requiere el permiso para el acceso al código postal de tu dispositivo Alexa, para así poder proporcionarte los precios en tu localidad.",
+          "examplePhrases": [
+            "Alexa, abre Gasolinas de México",
+            "Alexa, pregunta a Gasolinas de México ¿cuánto cuesta la magna?",
+            "Alexa, pregunta a Gasolinas de México ¿cuál es el precio del diésel?"
+          ]
+        }
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "1) 'Alexa, abre Gasolinas de México'\n2) 'Alexa, pregunta a Gasolinas de México el precio de la Magna'\n3) 'Alexa, pregunta a Gasolinas de México ¿cuanto cuesta el Diésel?'",
+      "category": "BUSINESS_AND_FINANCE",
+      "distributionCountries": [
+        "MX"
+      ]
+    }
+  }
+}
